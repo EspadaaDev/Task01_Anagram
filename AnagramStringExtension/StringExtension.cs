@@ -11,8 +11,7 @@ namespace Task01_Anagram
         /// Swap all letters in an expression.
         /// </summary>
         /// <param name="str">Input string</param>
-        /// <returns>A string in which all letters are in reverse order</returns>
-        /// 
+        /// <returns>A string in which all letters are in reverse order</returns>        
         public static string SwapWordsLetters(this string str)
         {
             string[] temp = str.Split(' ');
