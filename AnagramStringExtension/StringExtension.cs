@@ -12,7 +12,19 @@ namespace Task01_Anagram
         /// </summary>
         /// <param name="str">Input string</param>
         /// <returns>A string in which all letters are in reverse order</returns>
+        /// 
         public static string SwapWordsLetters(this string str)
+        {
+            string[] temp = str.Split(' ');
+            for (int i = 0; i < temp.Length; i++)
+            {
+                temp[i] = ReverseWord(temp[i]);
+            }
+
+            return String.Join(" ", temp);
+        }
+
+        private static string ReverseWord(string str)
         {
             char[] stringСharacters = str.ToCharArray();
 
@@ -32,7 +44,6 @@ namespace Task01_Anagram
                 }
                 else i++;
             }
-
             return new string(stringСharacters);
         }
     }

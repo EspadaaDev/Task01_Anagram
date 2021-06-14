@@ -10,39 +10,39 @@ namespace AnagramTests
         public void AnagramTest1()
         {
             // Arrange
-            string testStr = "Привет!";
+            string testStr = "Привет";
 
             // Act
             string reversedString = testStr.SwapWordsLetters();
 
             // Assert
-            Assert.AreEqual(reversedString, "тевирП!");
+            Assert.AreEqual(reversedString, "тевирП");
         }
 
         [TestMethod]
         public void AnagramTest2()
         {
             // Arrange
-            string testStr = "!д;е**лвв";
+            string testStr = "Привет Вадим!";
 
             // Act
             string reversedString = testStr.SwapWordsLetters();
 
             // Assert
-            Assert.AreEqual(reversedString, "!в;в**лед");
+            Assert.AreEqual(reversedString, "тевирП мидаВ!");
         }
 
         [TestMethod]
         public void AnagramTest3()
         {
             // Arrange
-            string testStr = "!!!Не?  Шл))( ппо_з";
+            string testStr = "При::вет  Вадим!";
 
             // Act
             string reversedString = testStr.SwapWordsLetters();
 
             // Assert
-            Assert.AreEqual(reversedString, "!!!зо?  пп))( лШе_Н");
+            Assert.AreEqual(reversedString, "тев::ирП  мидаВ!");
         }
 
         [TestMethod]
@@ -55,7 +55,7 @@ namespace AnagramTests
             string reversedString = testStr.SwapWordsLetters();
 
             // Assert
-            Assert.AreEqual(reversedString, "ьтисонзовo (milbusта, лт оак. ногзовя - ицамилбуС)");
+            Assert.AreEqual(reversedString, "яицамилбуС (акногзов, то тал. omilbus - ьтисонзов)");
         }
 
         [TestMethod]
@@ -68,7 +68,7 @@ namespace AnagramTests
             string reversedString = testStr.SwapWordsLetters();
 
             // Assert
-            Assert.AreEqual(reversedString, "g o - o o - o o");
+            Assert.AreEqual(reversedString, "o o - o o - o g");
         }
 
         [TestMethod]
@@ -94,7 +94,7 @@ namespace AnagramTests
             string reversedString = testStr.SwapWordsLetters();
 
             // Assert
-            Assert.AreEqual(reversedString, "вокаду ***/С///8/5 длиахиМ");
+            Assert.AreEqual(reversedString, "лиахиМ ***/д///8/5 вокадуС");
         }
 
         [TestMethod]
@@ -133,7 +133,7 @@ namespace AnagramTests
             string reversedString = testStr.SwapWordsLetters();
 
             // Assert
-            Assert.AreEqual(reversedString, "   д г в  ба");
+            Assert.AreEqual(reversedString, "   а б в  дг");
         }
     }
 }
